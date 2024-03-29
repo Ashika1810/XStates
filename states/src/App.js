@@ -18,7 +18,7 @@ function App() {
       setCountries(data)
     }
     catch(err){
-      console.error("Error fetching countries", err);
+      console.error(err);
     }
 
   }
@@ -31,7 +31,7 @@ function App() {
       setStates(data)
     }
     catch(err){
-      console.error("Error fetching states", err);
+      console.error(err);
     }
   }
 
@@ -43,7 +43,7 @@ function App() {
       setCities(data)
     }
     catch(err){
-      console.error("Error fetching cities", err);
+      console.error(err);
     }
   }
 
