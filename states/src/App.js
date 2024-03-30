@@ -18,7 +18,7 @@ function App() {
       setCountries(data)
     }
     catch(err){
-      console.error(err);
+      console.log(err.message);
     }
 
   }
@@ -31,7 +31,7 @@ function App() {
       setStates(data)
     }
     catch(err){
-      console.error(err);
+      console.log(err.message);
     }
   }
 
@@ -43,7 +43,7 @@ function App() {
       setCities(data)
     }
     catch(err){
-      console.error(err);
+      console.log(err.message);
     }
   }
 
