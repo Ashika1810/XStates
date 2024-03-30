@@ -14,7 +14,7 @@ function App() {
     try{
       const res = await fetch("https://crio-location-selector.onrender.com/countries");
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       setCountries(data)
     }
     catch(err){
@@ -27,7 +27,7 @@ function App() {
     try{
     const res = await fetch(`https://crio-location-selector.onrender.com/country=${selectedCountry}/states`);
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       setStates(data)
     }
     catch(err){
@@ -39,7 +39,7 @@ function App() {
     try{
     const res = await fetch(`https://crio-location-selector.onrender.com/country=${selectedCountry}/state=${selectedState}/cities`);
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       setCities(data)
     }
     catch(err){
