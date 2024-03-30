@@ -52,13 +52,13 @@ function App() {
   },[])
 
   useEffect(()=>{
-    if(selectedCountry){
+    if(!!selectedCountry){
     getStates();
     }
   },[selectedCountry]);
 
   useEffect(()=>{
-    if(selectedCountry && selectedState){
+    if(!!selectedCountry && !!selectedState){
       getCities();
     }
   },[selectedCountry,selectedState])
@@ -73,7 +73,7 @@ function App() {
         <option value="">Select Country</option>
         {countries.map((country)=>{
           return(
-          <option key={country}>{country}</option>
+          <option key={country} value={country}>{country}</option>
           )
         })}
         <option></option>
@@ -83,7 +83,7 @@ function App() {
         <option value="">Select State</option>
         {states.map((state)=>{
           return(
-          <option key={state}>{state}</option>
+          <option key={state} value={state}>{state}</option>
           )
         })}
         <option></option>
@@ -93,7 +93,7 @@ function App() {
         <option value="">Select City</option>
         {cities.map((city)=>{
           return(
-          <option key={city}>{city}</option>
+          <option key={city} value={city}>{city}</option>
           )
         })}
         <option></option>
