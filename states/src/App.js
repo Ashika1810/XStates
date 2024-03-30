@@ -21,7 +21,7 @@ function App() {
       console.log(err.message);
     }
 
-  }
+  };
 
   const getStates = async()=>{
     try{
@@ -33,7 +33,7 @@ function App() {
     catch(err){
       console.log(err.message);
     }
-  }
+  };
 
   const getCities = async()=>{
     try{
@@ -45,7 +45,7 @@ function App() {
     catch(err){
       console.log(err.message);
     }
-  }
+  };
 
   useEffect(()=>{
     getCountries();
