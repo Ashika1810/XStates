@@ -76,7 +76,6 @@ function App() {
           <option key={country} value={country}>{country}</option>
           )
         })}
-        <option></option>
         </select>
 
         <select value={selectedState} onChange={(e)=>setSelectedState(e.target.value)} className={styles.dropdown} disabled={!selectedCountry}>
@@ -86,7 +85,6 @@ function App() {
           <option key={state} value={state}>{state}</option>
           )
         })}
-        <option></option>
         </select>
 
         <select value={selectedCity} onChange={(e)=>setSelectedCity(e.target.value)} className={styles.dropdown} disabled={!selectedState}>
@@ -96,7 +94,6 @@ function App() {
           <option key={city} value={city}>{city}</option>
           )
         })}
-        <option></option>
         </select>
         </div>
         {selectedCity ? (
